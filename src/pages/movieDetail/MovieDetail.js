@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import './movieDetail.css'
 
 const MovieDetail = () => {
-  const [currentMovieDetail, setMovieDetail] = useState();
+  const [currentMovieDetail, setMovieDetail] = useState([]);
   const { id } = useParams();
   useEffect(() => {
     getData();
